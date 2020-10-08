@@ -1,0 +1,36 @@
+.card {
+    border-radius: 10px;
+    border: solid 2px lightgray;
+    padding: 20px;
+    background-color: #fff;
+    &__image {
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+    }
+    &__heading {
+        font-size: 1.5rem;
+    }
+    &__description {
+        font-style: italic;
+    }
+    &__link {
+        background-color: darkblue;
+        padding: 8px 12px;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 6px;
+        margin-top: 60px;
+        display: inline-block;
+    }
+    &--dark {
+        background-color: #222;
+        .card__heading, .card__description {
+            color: #fff;
+        }
+        .card__link {
+            background-color: #fff;
+            color: #222;
+        }
+    }
+}
